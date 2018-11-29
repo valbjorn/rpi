@@ -7,8 +7,8 @@ tree = LEDBoard(*range(2,28),pwm=True)
 
 def reset():
   for led in tree:
-    print "off"
     led.off()
+    led.source= [0]
 
 def flicker():
  for led in tree:
